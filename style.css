@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+#game-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #222;
+    border: 2px solid white;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+}
+
+.paddle {
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    background-color: white;
+}
+
+#left-paddle {
+    left: 10px;
+}
+
+#right-paddle {
+    right: 10px;
+}
+
+#ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Styles for the score display */
+#player-score,
+#ai-score {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center; /* Added */
+}
